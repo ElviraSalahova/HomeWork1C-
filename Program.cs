@@ -11,9 +11,9 @@ int N2= int.Parse(Console.ReadLine()!);
 
 if (N1 > N2)
 {
-    Console.WriteLine ($"Max {N1}");
+    Console.WriteLine ($"{N1} is Max, {N2} is Min");
 }    
 else 
 {   
-    Console.WriteLine ($"Max {N2}");
+    Console.WriteLine ($"{N2} is Max, {N1} is Min");
 }
