@@ -1,20 +1,19 @@
-﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-// a = 5; b = 7 -> max = 7
-// a = 2 b = 10 -> max = 10
-// a = -9 b = -3 -> max = -3
+﻿// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на 
+//два без остатка(number%2==0)).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
 
-Console.WriteLine("Enter first number: ");
-int N1= int.Parse(Console.ReadLine()!);
+Console.Write("Enter number: ");
+int number = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine("Enter second number: ");
-int N2= int.Parse(Console.ReadLine()!);
+int N= number % 2;
 
-if (N1 > N2)
+if(N== 0)
 {
-    Console.WriteLine ($"{N1} is Max, {N2} is Min");
-}    
-else 
-{   
-    Console.WriteLine ($"{N2} is Max, {N1} is Min");
+    Console.WriteLine("Да");
 }
-
+else
+{
+    Console.WriteLine("Нет");
+}
